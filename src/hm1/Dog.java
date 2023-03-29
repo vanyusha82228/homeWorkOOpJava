@@ -1,18 +1,20 @@
 package hm1;
 
-public class Cat extends Animal{
-    public Cat(String name, String color) {
+public class Dog extends Animal {
+    public Dog(String name, String color) {
         super(name, color);
     }
 
-    public Cat(String name) {
+    public Dog(String name) {
         super(name);
     }
 
 //    @Override
 //    public void toGo() {
-//        System.out.println("cat to go");
+//        System.out.println("dog to go");
 //    }
+
+
     @Override
     public void swim() {
     }

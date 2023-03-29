@@ -30,14 +30,23 @@ public class Animal {
     }
 
     public void toGo(){
-        System.out.println("go...");
+        System.out.println(String.format("%s %s walked!", this.getType(),this.name));
     }
 
     public void fly(){
-        System.out.println("fly");
+        System.out.println((String.format("%s %s fly!", this.getType(),this.name)));
     }
 
     public void swim(){
-        System.out.println("swim");
+        System.out.println((String.format("%s %s swim!", this.getType(),this.name)));
+    }
+
+    @Override
+    public String toString() {
+        return String.format(":Животное %s, Имя: %s, Цвет: %s", this.getType(), this.name, this.color);
+    }
+
+    public String getType() {
+        return this.getClass().getSimpleName();
     }
 }
